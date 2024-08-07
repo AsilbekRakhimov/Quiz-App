@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "Baloo 2";
+  src: url("/public/fonts/Baloo2-Medium.eot");
+  src: url("/public/fonts/Baloo2-Medium.eot?#iefix") format("embedded-opentype"),
+    url("/public/fonts/Baloo2-Medium.woff2") format("woff2"),
+    url("/public/fonts/Baloo2-Medium.woff") format("woff"),
+    url("/public/fonts/Baloo2-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Baloo 2";
+  src: url("/public/fonts/Baloo2-ExtraBold.eot");
+  src: url("/public/fonts/Baloo2-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/public/fonts/Baloo2-ExtraBold.woff2") format("woff2"),
+    url("/public/fonts/Baloo2-ExtraBold.woff") format("woff"),
+    url("/public/fonts/Baloo2-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Baloo 2";
+  src: url("/public/fonts/Baloo2-Regular.eot");
+  src: url("/public/fonts/Baloo2-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/public/fonts/Baloo2-Regular.woff2") format("woff2"),
+    url("/public/fonts/Baloo2-Regular.woff") format("woff"),
+    url("/public/fonts/Baloo2-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Baloo 2";
+  src: url("/public/fonts/Baloo2-Bold.eot");
+  src: url("/public/fonts/Baloo2-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/public/fonts/Baloo2-Bold.woff2") format("woff2"),
+    url("/public/fonts/Baloo2-Bold.woff") format("woff"),
+    url("/public/fonts/Baloo2-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Baloo 2";
+  src: url("/public/fonts/Baloo2-SemiBold.eot");
+  src: url("/public/fonts/Baloo2-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/public/fonts/Baloo2-SemiBold.woff2") format("woff2"),
+    url("/public/fonts/Baloo2-SemiBold.woff") format("woff"),
+    url("/public/fonts/Baloo2-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Baloo 2";
+  font-style: normal;
+  background-color: rgb(0, 70, 67, 70%);
+}
+
+.container {
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  row-gap: 100px;
+  padding: 120px 20px;
+}
+
+.welcome-write {
+  position: relative;
+  background-color: white;
+  text-align: center;
+  border-radius: 100%;
+  padding: 29px 20px;
+  align-content: center;
+}
+
+.quiz {
+  font-size: 35px;
+  font-weight: 600;
+  color: rgb(0, 70, 67);
+}
+
+.khelo {
+  font-size: 20px;
+  position: absolute;
+  bottom: 22px;
+  right: 14px;
+  color: rgb(248, 198, 96);
+  font-weight: 500;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  row-gap: 80px;
+}
+
+.login-form label {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+}
+
+#user-name {
+  padding: 10px 18px;
+  border-radius: 18px;
+  font-size: 15px;
+  border: 0;
+  background-color: rgba(69, 129, 126, 0.7);
+  color: white;
+  border: 1px solid white;
+  outline: none;
+  width: 100%;
+}
+
+#user-name::placeholder {
+    color: white;
+    opacity: 0.6;
+}
+
+.start-btn {
+  padding: 10px 0;
+  width: 100%;
+  font-size: 28px;
+  color: white;
+  border-radius: 18px;
+  background-color: rgb(248, 198, 96);
+  font-weight: 500;
+  outline: none;
+  border: none;
+  align-self: center;
+}

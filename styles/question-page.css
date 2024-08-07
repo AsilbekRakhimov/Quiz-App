@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'Baloo 2';
+    src: url('/public/fonts/Baloo2-Medium.eot');
+    src: url('/public/fonts/Baloo2-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/public/fonts/Baloo2-Medium.woff2') format('woff2'),
+        url('/public/fonts/Baloo2-Medium.woff') format('woff'),
+        url('/public/fonts/Baloo2-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baloo 2';
+    src: url('/public/fonts/Baloo2-ExtraBold.eot');
+    src: url('/public/fonts/Baloo2-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('/public/fonts/Baloo2-ExtraBold.woff2') format('woff2'),
+        url('/public/fonts/Baloo2-ExtraBold.woff') format('woff'),
+        url('/public/fonts/Baloo2-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baloo 2';
+    src: url('/public/fonts/Baloo2-Regular.eot');
+    src: url('/public/fonts/Baloo2-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/public/fonts/Baloo2-Regular.woff2') format('woff2'),
+        url('/public/fonts/Baloo2-Regular.woff') format('woff'),
+        url('/public/fonts/Baloo2-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baloo 2';
+    src: url('/public/fonts/Baloo2-Bold.eot');
+    src: url('/public/fonts/Baloo2-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/public/fonts/Baloo2-Bold.woff2') format('woff2'),
+        url('/public/fonts/Baloo2-Bold.woff') format('woff'),
+        url('/public/fonts/Baloo2-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baloo 2';
+    src: url('/public/fonts/Baloo2-SemiBold.eot');
+    src: url('/public/fonts/Baloo2-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/public/fonts/Baloo2-SemiBold.woff2') format('woff2'),
+        url('/public/fonts/Baloo2-SemiBold.woff') format('woff'),
+        url('/public/fonts/Baloo2-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    font-family: "Baloo 2";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.container{
+    max-width: 570px;
+    margin: 0px auto;
+}
+
+.hero__inner{
+    margin: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.question-number-title{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+
+.question-number-title i{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(0, 70, 67);
+}
+
+.question-number-title p{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.question-titles{
+    /* border: 2px solid black; */
+    /* max-width: 400px; */
+    position: relative;
+    padding: 15px 30px 48px;
+    box-shadow: 0.5px 0.5px 4px 2px rgb(90, 89, 89);
+    border-radius: 22px;
+    margin: 80px 0 0;
+}
+
+
+.time{
+    border: 12px solid rgb(0, 70, 67);
+    font-size: 34px;
+    font-weight: 550;
+    width: 105px;
+    height: 105px;
+    border-radius: 100%;
+    padding: 8px;
+    text-align: center;
+    color: rgb(0, 70, 67);
+    position: absolute;
+    top: -72px;
+    /* left: 180px; */
+    align-content: center;
+}
+
+.question-name{
+    width: 100%;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.answer{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 6px 14px;
+    font-size: 22px;
+    max-width: 570px;
+    margin: 14px auto 0;
+    border-radius: 14px;
+    justify-content: space-between;
+    font-weight: 800;
+    box-shadow: 1px 1px 10px 1px rgb(130, 130, 130);
+}
+
+.selected-answer {
+    background-color: #ABD1C6;
+    color: #004643;
+}
+
+.selected-checkbox {
+    background-color: #004643;
+}
+
+.checkbox{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.next-btn{
+    padding: 12px 0;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: #004643;
+    color: #FFF;
+    border-radius: 14px;
+    outline: none;
+    border: none;
+}
+
+.next-btn:hover{
+    transform: scaleX(1.01);
+
+}
+
+.back-page {
+    cursor: pointer;
+}
+
+@media screen and (min-width:776px){
+    .container{
+        max-width: 992px;
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .answer{
+        width: 45%;
+    }
+    .next-btn{
+        width: 45%;
+        margin: 0 auto;
+    }
+    .question-number-title{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+    }
+    .question-number-title p{
+        grid-column: 4/6;
+    }
+}
+
+
+
+
+

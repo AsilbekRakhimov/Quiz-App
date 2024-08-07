@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Baloo 2';
+    src: url('/public/fonts/Baloo2-Medium.eot');
+    src: url('/public/fonts/Baloo2-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/public/fonts/Baloo2-Medium.woff2') format('woff2'),
+        url('/public/fonts/Baloo2-Medium.woff') format('woff'),
+        url('/public/fonts/Baloo2-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baloo 2';
+    src: url('/public/fonts/Baloo2-ExtraBold.eot');
+    src: url('/public/fonts/Baloo2-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('/public/fonts/Baloo2-ExtraBold.woff2') format('woff2'),
+        url('/public/fonts/Baloo2-ExtraBold.woff') format('woff'),
+        url('/public/fonts/Baloo2-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baloo 2';
+    src: url('/public/fonts/Baloo2-Regular.eot');
+    src: url('/public/fonts/Baloo2-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/public/fonts/Baloo2-Regular.woff2') format('woff2'),
+        url('/public/fonts/Baloo2-Regular.woff') format('woff'),
+        url('/public/fonts/Baloo2-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baloo 2';
+    src: url('/public/fonts/Baloo2-Bold.eot');
+    src: url('/public/fonts/Baloo2-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/public/fonts/Baloo2-Bold.woff2') format('woff2'),
+        url('/public/fonts/Baloo2-Bold.woff') format('woff'),
+        url('/public/fonts/Baloo2-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baloo 2';
+    src: url('/public/fonts/Baloo2-SemiBold.eot');
+    src: url('/public/fonts/Baloo2-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/public/fonts/Baloo2-SemiBold.woff2') format('woff2'),
+        url('/public/fonts/Baloo2-SemiBold.woff') format('woff'),
+        url('/public/fonts/Baloo2-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    font-family: "Baloo 2";
+}
+
+.container{
+    max-width: 576px;
+    margin: 0 auto;
+    background-color: rgba(0, 70, 67, 0.75);
+}
+
+.hero__inner{
+    padding: 10px 24px 60px;
+}
+
+
+.results-title{
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 22px;
+    align-items: center;
+    font-weight: 600;
+    color: white;
+}
+
+.winners-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 18px 70px;
+}
+
+.winners{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 15px 0;
+}
+
+.winners div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+}
+
+.winners div .winner-picture{
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+}
+
+.first-place{
+    position: relative;
+    bottom: 70px;
+}
+
+.first-place-user{
+    border: 5px solid rgba(255, 217, 18, 1);
+}
+
+.second-place-user, .third-place-user{
+    border: 5px solid rgba(0, 70, 67, 1);
+
+}
+
+.rank-wrapper{
+    position: relative;
+}
+
+.crown{
+    width: 30px;
+    height: 20px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+.rank-first, .rank-second, .rank-third{
+    position: absolute;
+    top: 70px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.rank-second, .rank-third{
+    background-color: rgba(0, 70, 67, 1);
+}
+
+.rank-first{
+    position: absolute;
+    top: 90px;
+    background-color: rgba(255, 217, 18, 1);
+}
+
+.hero__inner__2{
+    border: 2px solid black;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    padding: 50px 30px;
+    background-color: rgba(239, 240, 243, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.hero__inner__2 div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    padding: 5px 10px;
+}
+
+.rank-image-name-wrapper{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-weight: 530;
+    font-size: 18px;
+}
+
+.rank-image-name-wrapper+p{
+    font-size: 18px;
+    font-weight: 530;
+}
+
+.rankers{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: start;
+}
+
+.rank-from-fourth-to-end{
+    font-size: 24px;
+}
+
+
+
+
+
+
+
