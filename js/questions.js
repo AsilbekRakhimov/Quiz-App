@@ -89,7 +89,7 @@ nextPageBtn.addEventListener("click", () => {
     const url = location.href
     const userID = url.split("userId=")[1]
     let users_scores = localStorage.getItem("users");
-    alert(users_scores)
+    window.location.href = '../pages/results-page.html'
   } else {
     showQuestion(Number(nextQuestion));
   }
