@@ -88,6 +88,7 @@ nextPageBtn.addEventListener("click", () => {
     const userScore = scoreCal.getscore()
     const url = location.href
     const userID = url.split("userId=")[1]
+    alert(`Your score is ${userScore}`)
     let users_scores = localStorage.getItem("users");
     window.location.href = '../pages/results-page.html'
   } else {

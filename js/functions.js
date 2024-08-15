@@ -289,7 +289,7 @@ function bringTimerCenter(params) {
 }
 
 
-function activateTimer(questionId, defaultTime = 8) {
+function activateTimer(questionId, defaultTime = 15) {
   const questionTimerTime = document.querySelector(".question-timer-time");
 
   let questionTime = defaultTime;
